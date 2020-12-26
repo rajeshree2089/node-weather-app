@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        
+    </head>
+     {{>header}}
+<body>
+<h1> {{ title }} </h1>
+<p> {{ description }} </p>
+<form>
+    <input type="text" placeholder="Address">
+    <button>Submit</button>
+</form><br>
+<p id="error-msg"></p>
+<p id="success-msg"></p>
+<br>
+<script src="./js/app.js"></script>
+</body>
+{{>footer}}
+</html>
