@@ -22,7 +22,6 @@ weatherForm.addEventListener('submit',(e) => {
         }
         else
         {
-           
             successmsg.textContent = data;
         }
 
