@@ -5,6 +5,8 @@ const app = express();
 const geocode = require('./geocode');
 const { response } = require('express');
 
+var port = process.env.PORT || 3000;
+
 app.use(express.static(path.join(__dirname,'public')));
 
 const viewsPath = path.join(__dirname,'templates/views');
@@ -61,6 +63,6 @@ app.get('/weather',(req,res) => {
 })
 
 
-app.listen(3000,() => {
-    console.log("Your server is listening");  
+app.listen(port,() => {
+    console.log("Your server is listening "+ port);  
 })
